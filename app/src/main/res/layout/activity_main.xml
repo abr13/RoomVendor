@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:src="@drawable/select" />
+
+    <Button
+        android:id="@+id/browseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Browse Image - 1" />
+
+    <Button
+        android:id="@+id/uploadImgButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Upload Image - 2"
+        android:enabled="false"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/girls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Girls Room"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/boys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boys Room" />
+
+        <RadioButton
+            android:id="@+id/individual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Individual Room" />
+
+        <RadioButton
+            android:id="@+id/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Room" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/cityText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="City"
+        android:inputType="text"
+        android:padding="5dp" />
+
+    <EditText
+        android:id="@+id/rentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Rent"
+        android:inputType="number"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/uploadDetailsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Upload Details - 3"
+        android:enabled="false"/>
+
+</LinearLayout>
