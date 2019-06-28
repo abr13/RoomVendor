@@ -134,7 +134,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onFailure(@NonNull Exception exception) {
                         // Handle unsuccessful uploads
-                        // ...
                         progressDialog.dismiss();
                         Toast.makeText(MainActivity.this, "Error uploading image", Toast.LENGTH_SHORT).show();
                     }
